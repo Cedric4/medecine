@@ -123,6 +123,10 @@ class Site extends BaseController
         $datas =['titre'=>'Création compte',];
         return $this->datas('register', $datas);
     }
+
+    /**
+     * @throws \ReflectionException
+     */
     public function saveUser(){
         $this->session = session();
         $validation = \Config\Services::validation();
@@ -156,6 +160,6 @@ class Site extends BaseController
                 return redirect()->to('/');
             }
         }        
-    }   
+    } 
 }
 

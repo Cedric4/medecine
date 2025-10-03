@@ -11,7 +11,8 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-3">Contacts</h4>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>11 Av. Malunga, Kamina, RDC</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="https://wa.me/243995504660">+243 995 504 660</a></p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="https://wa.me/243978467432">+243 978 467 432</a></p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="https://wa.me/243993780591">+243 993 780 591</a></p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:contact@facmedecineunikam.org">contact@facmedecineunikam.org</a></p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>

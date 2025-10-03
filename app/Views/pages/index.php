@@ -155,7 +155,7 @@
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Michel LODI</h5>
-                            <small>Professeur</small>
+                            <small>----</small>
                         </div>
                     </div>
                 </div>
@@ -172,8 +172,8 @@
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Julienne KATWAMBA</h5>
-                            <small>Professeur</small>
+                            <h5 class="mb-0">Julienne KALUNGA</h5>
+                            <small>----</small>
                         </div>
                     </div>
                 </div>
