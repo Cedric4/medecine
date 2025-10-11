@@ -144,7 +144,7 @@
                             <h5 class="text-primary mb-3 animated slideInDown display-5" style="letter-spacing: 2px;  font-family: monospace!important;">Faculté de Médecine</h5>
                             <h1 class="display-3 text-white animated slideInDown">Former des Cadres médecins</h1>
                             <p class="fs-5 text-white mb-4 pb-2">Elle dispense des enseignements au stantard international pour les futurs Médecins capables aux diplômes reconnus mondialement.</p>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">En savoir plus</a>
+                            <a href="<?= site_url('en-savoir-plus') ?>" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">En savoir plus</a>
                             <!--a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a-->
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             <h5 class="text-primary mb-3 animated slideInDown display-5" style="letter-spacing: 2px; font-family: monospace!important;">Faculté de Médecine</h5>
                             <h1 class="display-3 text-white animated slideInDown">Recherche scientifique</h1>
                             <p class="fs-5 text-white mb-4 pb-2">Dans le but d'orienter les étudiants vers des solutions des pays, le cadre idoine de la recherche est à votre portée.</p>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">En savoir plus</a>
+                            <a href="<?= site_url('learn-more') ?>" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">En savoir plus</a>
                             <!--a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a-->
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                             <h5 class="text-primary mb-3 animated slideInDown display-5" style="letter-spacing: 2px; font-family: monospace!important;">Faculté de Médecine</h5>
                             <h1 class="display-3 text-white animated slideInDown">En partenariat avec d'autres Universités</h1>
                             <p class="fs-5 text-white mb-4 pb-2">Se veut hospitalière à tous les étudiants de la République Démocratique du Congo et d'autres pays, pour le développement global.</p>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">En savoir plus</a>
+                            <a href="<?= site_url('learn-partenariat') ?>" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">En savoir plus</a>
                         </div>
                     </div>
                 </div>

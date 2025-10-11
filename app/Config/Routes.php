@@ -30,6 +30,9 @@ $routes->get('/contact', 'Site::contact');
 $routes->get('/posts', 'Site::posts');
 $routes->post('/posts', 'Site::posts');
 $routes->get('/about', 'Site::about');
+$routes->get('en-savoir-plus', 'Site::plus');
+$routes->get('learn-more', 'Site::learnMore');
+$routes->get('learn-partenariat', 'Site::learnPartenariat');
 
 $routes->get('/ouvrages', 'Site::connexionLivres');
 $routes->get('/cours', 'Site::connexionCours');

@@ -160,6 +160,18 @@ class Site extends BaseController
                 return redirect()->to('/');
             }
         }        
-    } 
+    }
+    public function plus(){
+        $datas =['titre'=>'En savoir plus',];
+        return $this->datas('en-savoir-plus', $datas);
+    }
+    public function learnMore(){
+        $datas =['titre'=>'En savoir plus',];
+        return $this->datas('learn-recherche', $datas);
+    }
+    public function learnPartenariat(){
+        $datas =['titre'=>'En savoir plus',];
+        return $this->datas('learn-partenariat', $datas);
+    }
 }
 
