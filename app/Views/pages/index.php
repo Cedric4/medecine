@@ -108,7 +108,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?= base_url('assets/images/team_1.jpg') ?>" alt="Prof médecine">
+                            <img class="img-fluid" src="<?= base_url('assets/images/team/team-1.jpg') ?>" alt="Prof médecine">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -119,14 +119,15 @@
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Michel KABAMBA</h5>
-                            <small>Professeur</small>
+                            <small>Doyen de la faculté</small> <br>
+                            <small style="font-size: 12px"><a href="mailto:michelkabamba@facmedecineunikam.org">michelkabamba@facmedecineunikam.org</a></small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?= base_url('assets/images/team_2.jpg') ?>" alt="Prof médecine">
+                            <img class="img-fluid" src="<?= base_url('assets/images/team/team-2.jpg') ?>" alt="Prof médecine">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -137,32 +138,15 @@
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Ignace BWANA</h5>
-                            <small>Professeur</small>
+                            <small>Vice-Doyen Enseig.</small>
+                            <small style="font-size: 12px"><a href="mailto:ignacebwana@facmedecineunikam.org">ignacebwana@facmedecineunikam.org</a></small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?= base_url('assets/images/team_3.jpg') ?>" alt="Prof médecine">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Michel LODI</h5>
-                            <small>----</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="<?= base_url('assets/images/team/team-5.jpg') ?>" alt="" height="300px">
+                            <img class="img-fluid" src="<?= base_url('assets/images/team/team-3.jpg') ?>" alt="Prof médecine">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
@@ -173,7 +157,27 @@
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Julienne KALUNGA</h5>
-                            <small>----</small>
+                            <small>Sec. Admin & Fin.</small>
+                            <small style="font-size: 12px"><a href="mailto:contact@facmedecineunikam.org">contact@facmedecineunikam.org</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="<?= base_url('assets/images/team/team-4.jpg') ?>" alt="" height="300px">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Michel LODI</h5>
+                            <small>En charge de la salle Labo</small>
+                            <small style="font-size: 12px"><a href="mailto:contact@facmedecineunikam.org">contact@facmedecineunikam.org</a></small>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="<?= base_url('assets/images/logo/logo_unikam.png') ?>" rel="icon">
+    <link href="<?= base_url('assets/images/logo/favicon.jpeg') ?>" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
