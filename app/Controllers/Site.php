@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Ouvrages;
 use App\Models\Posts;
 use App\Models\Visiteurs;
 use App\Models\Cours;
@@ -64,9 +65,19 @@ class Site extends BaseController
         if (!session()->has('user')) {
             return redirect()->to('/');
         }
-        $model = new Cours();
-        $all_cours = $model->findAll();
-        $datas =['titre'=>'Ouvrages', 'all_cours'=>$all_cours];
+        $model = new Ouvrages();
+        $medecine_internes = $model->where('domaine', 'Medecine_Interne')->findAll();
+        $Pediatrie = $model->where('domaine', 'Pediatrie')->findAll();
+        $Gyneco = $model->where('domaine', 'Gyneco')->findAll();
+        $Chirurgie = $model->where('domaine', 'Chirurgie')->findAll();
+        $Specialite = $model->where('domaine', 'Specialite')->findAll();
+        $datas =[
+            'titre'=>'Ouvrages',
+            'medecine_internes'=>$medecine_internes,
+            'Pediatrie'=>$Pediatrie,
+            'Gyneco'=>$Gyneco,
+            'Chirurgie'=>$Chirurgie,
+            'Specialite'=>$Specialite];
         return $this->datas('ouvrages', $datas);
     }
     public function cours(){

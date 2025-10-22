@@ -19,22 +19,31 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body table-responsive">
-                                <table class="table table-bordered table-sm table-striped" id="myTable1">
+                                <table id="myTable1" class="display table table-bordered table-striped table-sm">
                                     <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Intitulé livre (Description)</th>
-                                            <th>Action</th>
-                                        </tr>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Titre</th>
+                                        <th>Domaine</th>
+                                        <th>Fichier</th>
+                                        <th>Date ajout</th>
+                                        <th>Action</th>
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                            <?php static $i = 1; foreach($all_cours as $item): ?>
-                                                <tr>
-                                                    <td><?= $i ?></td>
-                                                    <td><a href="<?= base_url().'uploads/cours/'.$item['fichier'] ?>"><?= $item['titre'] ?></a></td>
-                                                    <td><a href="<?= base_url().'uploads/cours/'.$item['fichier'] ?>" class="btn btn-success btn-sm" download=""><i class="fas fa-download"></i>  Download</a></td>
-                                                </tr>
+                                        <?php static $i = 1; foreach ($medecine_internes as $ouvrage): ?>
+                                            <tr>
+                                                <td class="text-center"><?= $i; ?></td>
+                                                <td><?= esc($ouvrage['titre']); ?></td>
+                                                <td><?= esc($ouvrage['domaine']); ?></td>
+                                                <td><a href="<?= base_url('uploads/ouvrages/'.$ouvrage['fichier']) ?>" target="_blank"><?= esc($ouvrage['fichier']); ?></a></td>
+                                                <td><?= date('d/m/Y', strtotime($ouvrage['date_ajout'])); ?></td>
+                                                <td>
+                                                    <button class="btn btn-danger btn-sm" id="del_support" value="<?= esc($ouvrage['id']); ?>" title="Supprimer le support de cours"><i class="fas fa-trash-alt"></i></button>
+                                                </td>
+                                            </tr>
                                             <?php $i++; endforeach; ?>
+                                    <!-- Ajouter d'autres lignes de support de cours ici -->
                                     </tbody>
                                 </table>
                             </div>
@@ -48,7 +57,33 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <table id="myTable2" class="display table table-bordered table-striped table-sm">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Titre</th>
+                                        <th>Domaine</th>
+                                        <th>Fichier</th>
+                                        <th>Date ajout</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php static $i = 1; foreach ($Pediatrie as $ouvrage): ?>
+                                        <tr>
+                                            <td class="text-center"><?= $i; ?></td>
+                                            <td><?= esc($ouvrage['titre']); ?></td>
+                                            <td><?= esc($ouvrage['domaine']); ?></td>
+                                            <td><a href="<?= base_url('uploads/ouvrages/'.$ouvrage['fichier']) ?>" target="_blank"><?= esc($ouvrage['fichier']); ?></a></td>
+                                            <td><?= date('d/m/Y', strtotime($ouvrage['date_ajout'])); ?></td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" id="del_support" value="<?= esc($ouvrage['id']); ?>" title="Supprimer le support de cours"><i class="fas fa-trash-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <?php $i++; endforeach; ?>
+                                    <!-- Ajouter d'autres lignes de support de cours ici -->
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -60,10 +95,114 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <table id="myTable3" class="display table table-bordered table-striped table-sm">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Titre</th>
+                                        <th>Domaine</th>
+                                        <th>Fichier</th>
+                                        <th>Date ajout</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php static $i = 1; foreach ($Chirurgie as $ouvrage): ?>
+                                        <tr>
+                                            <td class="text-center"><?= $i; ?></td>
+                                            <td><?= esc($ouvrage['titre']); ?></td>
+                                            <td><?= esc($ouvrage['domaine']); ?></td>
+                                            <td><a href="<?= base_url('uploads/ouvrages/'.$ouvrage['fichier']) ?>" target="_blank"><?= esc($ouvrage['fichier']); ?></a></td>
+                                            <td><?= date('d/m/Y', strtotime($ouvrage['date_ajout'])); ?></td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" id="del_support" value="<?= esc($ouvrage['id']); ?>" title="Supprimer le support de cours"><i class="fas fa-trash-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <?php $i++; endforeach; ?>
+                                    <!-- Ajouter d'autres lignes de support de cours ici -->
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Gynécologie
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table id="myTable4" class="display table table-bordered table-striped table-sm">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Titre</th>
+                                        <th>Domaine</th>
+                                        <th>Fichier</th>
+                                        <th>Date ajout</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php static $i = 1; foreach ($Gyneco as $ouvrage): ?>
+                                        <tr>
+                                            <td class="text-center"><?= $i; ?></td>
+                                            <td><?= esc($ouvrage['titre']); ?></td>
+                                            <td><?= esc($ouvrage['domaine']); ?></td>
+                                            <td><a href="<?= base_url('uploads/ouvrages/'.$ouvrage['fichier']) ?>" target="_blank"><?= esc($ouvrage['fichier']); ?></a></td>
+                                            <td><?= date('d/m/Y', strtotime($ouvrage['date_ajout'])); ?></td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" id="del_support" value="<?= esc($ouvrage['id']); ?>" title="Supprimer le support de cours"><i class="fas fa-trash-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <?php $i++; endforeach; ?>
+                                    <!-- Ajouter d'autres lignes de support de cours ici -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Spécialités
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table id="myTable3" class="display table table-bordered table-striped table-sm">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Titre</th>
+                                        <th>Domaine</th>
+                                        <th>Fichier</th>
+                                        <th>Date ajout</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php static $i = 1; foreach ($Specialite as $ouvrage): ?>
+                                        <tr>
+                                            <td class="text-center"><?= $i; ?></td>
+                                            <td><?= esc($ouvrage['titre']); ?></td>
+                                            <td><?= esc($ouvrage['domaine']); ?></td>
+                                            <td><a href="<?= base_url('uploads/ouvrages/'.$ouvrage['fichier']) ?>" target="_blank"><?= esc($ouvrage['fichier']); ?></a></td>
+                                            <td><?= date('d/m/Y', strtotime($ouvrage['date_ajout'])); ?></td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm" id="del_support" value="<?= esc($ouvrage['id']); ?>" title="Supprimer le support de cours"><i class="fas fa-trash-alt"></i></button>
+                                            </td>
+                                        </tr>
+                                        <?php $i++; endforeach; ?>
+                                    <!-- Ajouter d'autres lignes de support de cours ici -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

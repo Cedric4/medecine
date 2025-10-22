@@ -111,6 +111,26 @@
     } );
 </script>
 <script>
+    $(document).ready( function () {
+        $('#myTable2').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable3').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable4').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable5').DataTable();
+    } );
+</script>
+<script>
     $(document).ready(function(){
         <?php if (session()->get('success') != null){?>
         toastr.options = {
