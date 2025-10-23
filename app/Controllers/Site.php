@@ -71,13 +71,45 @@ class Site extends BaseController
         $Gyneco = $model->where('domaine', 'Gyneco')->findAll();
         $Chirurgie = $model->where('domaine', 'Chirurgie')->findAll();
         $Specialite = $model->where('domaine', 'Specialite')->findAll();
+        $Dermatologie = $model->where('domaine', 'Dermatologie')->findAll();
+        $Infectiologie  = $model->where('domaine', 'Infectiologie')->findAll();
+        $Podologie  = $model->where('domaine', 'Podologie')->findAll();
+        $Rhumatologie  = $model->where('domaine', 'Rhumatologie')->findAll();
+        $Urologie  = $model->where('domaine', 'Urologie')->findAll();
+        $Nephrologie  = $model->where('domaine', 'Nephrologie')->findAll();
+        $sapu  = $model->where('domaine', 'sapu')->findAll();
+        $Neurologie = $model->where('domaine', 'Neurologie')->findAll();
+        $Psychiatrie = $model->where('domaine', 'Psychiatrie')->findAll();
+        $Microbiologie_et_bacteriologie = $model->where('domaine', 'Microbiologie_et_bacteriologie')->findAll();
+        $Anthropologie  = $model->where('domaine', 'Anthropologie')->findAll();
+        $Anatomie = $model->where('domaine', 'Anatomie')->findAll();
+        $Physiologie = $model->where('domaine', 'Physiologie')->findAll();
+        $Imagerie_medicale = $model->where('domaine', 'Imagerie_medicale')->findAll();
+        $Science_de_base = $model->where('domaine', 'Science_de_base')->findAll();
+
         $datas =[
             'titre'=>'Ouvrages',
             'medecine_internes'=>$medecine_internes,
             'Pediatrie'=>$Pediatrie,
             'Gyneco'=>$Gyneco,
             'Chirurgie'=>$Chirurgie,
-            'Specialite'=>$Specialite];
+            'Specialite'=>$Specialite,
+            'Dermatologie'=>$Dermatologie,
+            'Infectiologie'=>$Infectiologie,
+            'Podologie'=>$Podologie,
+            'Rhumatologie'=>$Rhumatologie,
+            'Urologie'=>$Urologie,
+            'Nephrologie'=>$Nephrologie,
+            'Psychiatrie'=>$Psychiatrie,
+            'Microbiologie_et_bacteriologie'=>$Microbiologie_et_bacteriologie,
+            'Anthropologie'=>$Anthropologie,
+            'Anatomie'=>$Anatomie,
+            'sapu'=>$sapu,
+            'Neurologie'=>$Neurologie,
+            'Physiologie'=>$Physiologie,
+            'Imagerie_medicale'=>$Imagerie_medicale,
+            'Science_de_base'=>$Science_de_base,
+        ];
         return $this->datas('ouvrages', $datas);
     }
     public function cours(){

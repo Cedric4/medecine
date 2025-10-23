@@ -131,6 +131,81 @@
     } );
 </script>
 <script>
+    $(document).ready( function () {
+        $('#myTable6').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable7').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable8').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable9').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable10').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable11').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable12').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable13').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable14').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable15').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable16').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable17').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable18').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable19').DataTable();
+    } );
+</script>
+<script>
+    $(document).ready( function () {
+        $('#myTable20').DataTable();
+    } );
+</script>
+<script>
     $(document).ready(function(){
         <?php if (session()->get('success') != null){?>
         toastr.options = {
